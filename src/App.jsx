@@ -1,4 +1,4 @@
-import React from "react";
+import {useState, useRef} from "react";
 import CountUp from 'react-countup';
 
 import nftImage from "./images/image-equilibrium.jpg";
@@ -10,13 +10,10 @@ import "./App.css";
 
 export default function App() {
 
-  // const timer = <CountUp delay={2} end={100} />
-
-  // if (timer === 100 ) {
-  //   console.log("Okay")
-  // }
+  const [countIsDone, setCountIsDone] = useState(false);
 
   return (
+
     <div className="container">
     <div className="icon--container">
       <img className="icon--nft" src={nftImage} alt="" />
@@ -39,14 +36,25 @@ export default function App() {
 
         <div className="time--content" aria-label="time">
           <img className="icon--price" src={iconClock} alt="" />
-          <p id="timer" className="price para">
+            <p id="timer" className="price para">
+             { countIsDone ? (
+                '3 Days left'
+              ) : (
+              <CountUp 
+                delay={2}
+                end={100}
+                onEnd={() => setCountIsDone(true)}
+              />
+              )}
+          </p>
+          {/* <p id="timer" className="price para">
             <CountUp 
             delay={1} 
             end={100} 
             onEnd={() => 
               document.getElementById("timer").innerHTML = "3 Days Left"}
             />
-          </p>
+          </p> */}
         </div>
 
         <div id="line" aria-label="hidden"></div>
@@ -62,3 +70,4 @@ export default function App() {
     </div>
   );
 }
+
