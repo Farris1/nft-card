@@ -8,7 +8,7 @@ import ethIcon from "./images/icon-ethereum.svg";
 import iconClock from "./images/icon-clock.svg";
 import avatarImage from "./images/image-avatar.png";
 import iconView from "./images/icon-view.svg";
-import "./App.css";
+import "./src/App.css";
 
 export default function App() {
   var _useState = useState(false),
