@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://farris1.github.io/nft-card/](https://farris1.github.io/nft-card/)
+- Live Site URL: [https://equilibrium-nft-preview.netlify.app](https://equilibrium-nft-preview.netlify.app)
 
 ## My process
 
