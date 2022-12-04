@@ -38,7 +38,7 @@ var _slicedToArray = (function () {
   };
 })();
 
-import { useState, useRef } from "react";
+import React, {useState} from "react";
 import CountUp, { useCountUp } from "react-countup";
 
 import nftImage from "./src/images/image-equilibrium.jpg";

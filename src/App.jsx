@@ -1,6 +1,6 @@
-import {useState, useRef} from "react";
-import CountUp, { useCountUp } from 'react-countup';
+import React, {useState} from "react";
 
+import CountUp, { useCountUp } from "react-countup";
 import nftImage from "./images/image-equilibrium.jpg";
 import ethIcon from "./images/icon-ethereum.svg"
 import iconClock from "./images/icon-clock.svg"
